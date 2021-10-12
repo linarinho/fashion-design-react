@@ -2,6 +2,8 @@ import './home.scss';
 import img1 from './../../assets/banner1.jpg';
 import img2 from './../../assets/banner2.jpg';
 import img3 from './../../assets/banner3.jpg';
+import SwiperInfo from './../../components/swiper-info/SwiperInfo';
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -19,36 +21,18 @@ SwiperCore.use([Navigation]);
 function Home() {
 
     return (
-        <section className="home">
+        <section id="home" className="home">
             <Swiper navigation={true} loop={true} className="home-wrapper">
                 <SwiperSlide>
-                    <div className="home-swiper-slider" style={{ backgroundImage: `url(${img1})` }}>
-                        <div class="content">
-                            <span>Upto 50% off</span>
-                            <h3>Women's Fashion</h3>
-                            <a href="#" class="btn">Shop Now</a>
-                        </div>
-                    </div>
+                    <SwiperInfo img={img1} price="Upto 50% off" desc="Women's Fashion"/>  
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div className="home-swiper-slider" style={{ backgroundImage: `url(${img2})` }}>
-                        <div class="content">
-                            <span>Upto 50% off</span>
-                            <h3>Men's Fashion</h3>
-                            <a href="#" class="btn">Shop Now</a>
-                        </div>
-                    </div>
+                    <SwiperInfo img={img3} price="Upto 50% off" desc="Kid's Fashion"/>
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div className="home-swiper-slider" style={{ backgroundImage: `url(${img3})` }}>
-                        <div class="content">
-                            <span>Upto 50% off</span>
-                            <h3>Kid's Fashion</h3>
-                            <a href="#" class="btn">Shop Now</a>
-                        </div>
-                    </div>
+                    <SwiperInfo img={img2} price="Upto 50% off" desc="Men's Fashion"/>
                 </SwiperSlide>
             </Swiper>
 
