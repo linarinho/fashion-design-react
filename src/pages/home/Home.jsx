@@ -22,31 +22,31 @@ function Home() {
         <section className="home">
             <Swiper navigation={true} loop={true} className="home-wrapper">
                 <SwiperSlide>
-                    <div className="banner" style={{ backgroundImage: `url(${img1})` }}>
+                    <div className="home-swiper-slider" style={{ backgroundImage: `url(${img1})` }}>
                         <div class="content">
                             <span>Upto 50% off</span>
                             <h3>Women's Fashion</h3>
-                            <a href="#" class="btn">Shop now</a>
+                            <a href="#" class="btn">Shop Now</a>
                         </div>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div className="banner" style={{ backgroundImage: `url(${img2})` }}>
+                    <div className="home-swiper-slider" style={{ backgroundImage: `url(${img2})` }}>
                         <div class="content">
                             <span>Upto 50% off</span>
-                            <h3>Women's Fashion</h3>
-                            <a href="#" class="btn">Shop now</a>
+                            <h3>Men's Fashion</h3>
+                            <a href="#" class="btn">Shop Now</a>
                         </div>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div className="banner" style={{ backgroundImage: `url(${img3})` }}>
+                    <div className="home-swiper-slider" style={{ backgroundImage: `url(${img3})` }}>
                         <div class="content">
                             <span>Upto 50% off</span>
-                            <h3>Women's Fashion</h3>
-                            <a href="#" class="btn">Shop now</a>
+                            <h3>Kid's Fashion</h3>
+                            <a href="#" class="btn">Shop Now</a>
                         </div>
                     </div>
                 </SwiperSlide>

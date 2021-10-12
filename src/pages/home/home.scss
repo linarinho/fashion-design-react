@@ -5,32 +5,49 @@
 
     .home-wrapper {
         .swiper-button-prev, .swiper-button-next {
-            color: lightgray;
+            background-color: white;
+            border: 2px solid lightgrey;
         }
 
         .swiper-button-prev {
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
             padding: 10px;
-            background-color: lightgrey;
             border-radius: 5px;
+            top: auto;
+            bottom: 20px;
+            right: 80px;
+            left: auto;
+
+            &:hover {
+                border: 2px solid #130f40;
+                background-color: #130f40;
+            }
         }
 
         .swiper-button-next {
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
             padding: 10px;
-            background-color: lightgrey;
             border-radius: 5px;
+            top: auto;
+            bottom: 20px;
+            right: 40px;
+            left: auto;
+
+            &:hover {
+                border: 2px solid #130f40;
+                background-color: #130f40;
+            }
         }
 
         .swiper-button-prev::after, .swiper-button-next::after {
-            font-size: 20px;
+            font-size: 15px;
             font-weight: 600;
             color: gray;
         }
         
-        .banner {
+        .home-swiper-slider {
             min-height: 65vh;
             //background: url("./../../assets/banner1.jpg") no-repeat;
             background-size: cover !important;
@@ -43,12 +60,12 @@
             .content {
                 span {
                     color: #666;
-                    font-size: 16px;
+                    font-size: 18px;
                     font-weight: 500;
                 }
                 h3 {
                     color: #130f40;
-                    font-size: 28px;
+                    font-size: 30px;
                     margin: 5px 0;
                 }
             }

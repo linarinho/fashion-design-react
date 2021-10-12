@@ -1,5 +1,6 @@
 import './App.scss';
 import Header from './components/header/Header';
+import Banner from './pages/banner/Banner';
 import Home from './pages/home/Home';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header />
 
       <Home />
+      <Banner />
     </>
   )
 }
