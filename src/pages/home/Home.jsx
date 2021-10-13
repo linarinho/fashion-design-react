@@ -13,16 +13,16 @@ import 'swiper/components/navigation/navigation.scss'
 
 // import Swiper core and required modules
 import SwiperCore, {
-    Navigation
+    Navigation, Autoplay
 } from 'swiper/core';
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Autoplay]);
 
 function Home() {
 
     return (
         <section id="home" className="home">
-            <Swiper navigation={true} loop={true} className="home-wrapper">
+            <Swiper navigation={true} loop={true} autoplay={{delay: 5000, disableOnInteraction: false}} className="home-wrapper">
                 <SwiperSlide>
                     <SwiperInfo img={img1} price="Upto 50% off" desc="Women's Fashion"/>  
                 </SwiperSlide>

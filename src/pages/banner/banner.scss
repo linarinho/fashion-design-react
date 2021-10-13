@@ -3,43 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 40px;
-
-    .banner {
-        height: 300px;
-        flex:1 1 400px;
-        overflow: hidden;
-        position: relative;
-
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            transition: 1s ease-out;
-        }
-
-        .content {
-            position: absolute;
-            top: 80px;
-            right: 50px;
-
-            span {
-                color: #666;
-                font-size: 16px;
-                font-weight: 500;
-            }
-            h3 {
-                color: #130f40;
-                font-size: 26px;
-                margin: 5px 0;
-            }
-        }
-
-        &:hover {
-            img {
-                transform: scale(1.2);
-            }
-        }
-    }
 }
