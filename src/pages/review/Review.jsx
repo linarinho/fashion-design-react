@@ -23,7 +23,7 @@ function Review() {
         <section id="review" className="review">
             <h1 class="review-heading"> Client's <span>Review</span> </h1>
 
-            <Swiper navigation={false} slidesPerView={3} spaceBetween={10} className="review-wrapper">
+            <Swiper navigation={false} slidesPerView={2} spaceBetween={10} className="review-wrapper">
                 <SwiperSlide>
                     <ReviewCard img={review1} name="Roberto Linares" desc="Happy Client" />
                 </SwiperSlide>
