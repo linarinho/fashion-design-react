@@ -2,6 +2,7 @@
     border: 0.1rem solid rgba(0,0,0,.3);
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     position: relative;
 
     .icons {
@@ -27,7 +28,6 @@
             background-color: white;
             cursor: pointer;
         }
-
     }
 
     &:hover .icons{
@@ -90,5 +90,4 @@
             }
         }
     }
-    
 }

@@ -1,0 +1,37 @@
+
+.deal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(#fff 20%, #f9f9f9 20.1%);
+    //gap: 20px;
+
+    .image {
+        flex: 1 1 300px;  
+        
+        img {
+            width: 400px;
+        }
+    }
+
+    .content {
+        flex: 1 1 200px;
+
+        span{
+            color: #eb4d4b;
+            font-size: 1.7rem;
+        }
+
+        h3{
+            color: #130f40;
+            font-size: 3rem;
+            padding:.5rem 0;
+        }
+
+        p{
+            color: #666;
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+    }
+} 

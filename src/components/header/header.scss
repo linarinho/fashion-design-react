@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: 16px 9%;
+    padding: 18px 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,9 +24,10 @@
 
         .icons-icon {
             color: #eb4d4b;
+            font-size: 28px;
         }
         .title {
-            font-size: 18px;
+            font-size: 22px;
             color: #130f40;
             font-weight: 600;
         }
@@ -35,7 +36,7 @@
     .navegation {
         .navegation-item {
             margin-right: 30px;
-            font-size: 14px;
+            font-size: 15px;
             color: #666;
 
             &:hover {
@@ -48,6 +49,7 @@
         .icons-icon {
             margin-left: 10px;
             color: #666;
+            font-size: 28px;
 
             &:hover {
                 color: #eb4d4b;
