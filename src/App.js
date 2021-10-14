@@ -1,6 +1,7 @@
 import './App.scss';
 import Header from './components/header/Header';
 import Banner from './pages/banner/Banner';
+import Blog from './pages/blog/Blog';
 import Contact from './pages/contact/Contact';
 import Deal from './pages/deal/Deal';
 import Featured from './pages/featured/Featured';
@@ -20,6 +21,7 @@ function App() {
       <Featured />
       <Review />
       <Contact />
+      <Blog />
     </>
   )
 }

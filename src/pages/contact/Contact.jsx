@@ -3,7 +3,7 @@ import { EmailOutlined, LocationOnOutlined, LocalPhoneOutlined } from '@material
 
 function Contact() {
     return (
-        <section className="contact">
+        <section id="contact" className="contact">
             <h1 class="contact-heading"> Contact <span>Us</span> </h1>
 
             <div className="contact-top">

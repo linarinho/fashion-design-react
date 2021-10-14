@@ -19,7 +19,7 @@ function Header() {
                 <a href="#featured" className="navegation-item">Featured</a>
                 <a href="#review" className="navegation-item">Review</a>
                 <a href="#contact" className="navegation-item">Contact</a>
-                <a href="#blogs" className="navegation-item">Blogs</a>
+                <a href="#blog" className="navegation-item">Blogs</a>
             </nav>
 
             <div className="icons">
