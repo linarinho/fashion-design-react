@@ -112,7 +112,7 @@ function Footer() {
             </div>
 
             <div className="footer-info">
-                <h3>&copy; Copyright @ 2021 By <span>Roberto Linares Zamora</span></h3>
+                <h3>Creted By <span>@Roberto Linares Zamora</span></h3>
             </div>
 
         </section>

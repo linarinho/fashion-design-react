@@ -10,21 +10,26 @@ import Home from './pages/home/Home';
 import Products from './pages/products/Products';
 import Review from './pages/review/Review';
 
+import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 function App() {
   return (
-    <>
-      <Header />
-
-      <Home />
-      <Banner />
-      <Products />
-      <Deal />
-      <Featured />
-      <Review />
-      <Contact />
-      <Blog />
-      <Footer />
-    </>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Header />
+          <Home />
+          <Banner />
+          <Products />
+          <Deal />
+          <Featured />
+          <Review />
+          <Contact />
+          <Blog />
+          <Footer />
+        </Route>
+      </Switch>
+    </Router>
   )
 }
 

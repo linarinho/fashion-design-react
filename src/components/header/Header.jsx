@@ -1,5 +1,6 @@
 import './header.scss'
 import { useState } from 'react';
+/* import { NavLink } from 'react-router-dom'; */
 import { Close, FavoriteBorder, SearchOutlined, ShoppingCart, ShoppingCartOutlined } from '@material-ui/icons'
 
 function Header() {
@@ -14,6 +15,12 @@ function Header() {
             </div>
 
             <nav className="navegation">
+                {/* <NavLink exact to="/" className="navegation-item" activeClassName="active-items">Home</NavLink>
+                <NavLink to="/products" className="navegation-item" activeClassName="active-items">Products</NavLink>
+                <NavLink to="/featured" className="navegation-item" activeClassName="active-items">Featured</NavLink>
+                <NavLink to="/review" className="navegation-item" activeClassName="active-items">Review</NavLink>
+                <NavLink to="/contact" className="navegation-item" activeClassName="active-items">Contact</NavLink> 
+                <NavLink to="/blog" className="navegation-item">Blogs</NavLink>*/}
                 <a href="#home" className="navegation-item">Home</a>
                 <a href="#products" className="navegation-item">Products</a>
                 <a href="#featured" className="navegation-item">Featured</a>
