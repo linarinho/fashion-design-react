@@ -4,7 +4,9 @@ import { DateRange, Person } from '@material-ui/icons';
 function BlogCard({ img, title, description, date, user }) {
     return (
         <div className="blog-card">
-            <img src={img} alt="" />
+            <div class="image">
+                <img src={img} alt="" />
+            </div>
 
             <div className="blog-card-body">
                 <h3>{title}</h3>

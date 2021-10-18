@@ -5,11 +5,21 @@
     margin-top: 10px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 
-    img {
+    .image {
         height: 250px;
         width: 100%;
-        object-fit: cover;
         border-radius: 2px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+    
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
     }
 
     .blog-card-body {
