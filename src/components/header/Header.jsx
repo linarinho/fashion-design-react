@@ -1,12 +1,16 @@
 import './header.scss'
 import { useState } from 'react';
 /* import { NavLink } from 'react-router-dom'; */
-import { Close, FavoriteBorder, SearchOutlined, ShoppingCart, ShoppingCartOutlined } from '@material-ui/icons'
+import { Close, FavoriteBorder, SearchOutlined, ShoppingCart, ShoppingCartOutlined, FormatListBulleted } from '@material-ui/icons'
 
 function Header() {
     const [activeSearch, setactiveSearch] = useState(false);
     const searchStyle = !activeSearch ? "header-search" : "header-search active";
 
+    const [activeNevResponsive, setactiveNavResponsive] = useState(false);
+    const navResponsiveStyle = !activeNevResponsive ? "navegation" : "navegation active";
+
+    console.log(navResponsiveStyle);
     return (
         <header className="header">
             <div className="header-logo">
@@ -14,7 +18,7 @@ function Header() {
                 <span className="title">Shop</span>
             </div>
 
-            <nav className="navegation">
+            <nav className={navResponsiveStyle}>
                 {/* <NavLink exact to="/" className="navegation-item" activeClassName="active-items">Home</NavLink>
                 <NavLink to="/products" className="navegation-item" activeClassName="active-items">Products</NavLink>
                 <NavLink to="/featured" className="navegation-item" activeClassName="active-items">Featured</NavLink>
@@ -30,6 +34,7 @@ function Header() {
             </nav>
 
             <div className="icons">
+                <FormatListBulleted className="icons-icon responsive" onClick={() => setactiveNavResponsive(!activeNevResponsive)} />
                 <SearchOutlined className="icons-icon" onClick={() => setactiveSearch(!activeSearch)} />
                 <ShoppingCartOutlined className="icons-icon" />
                 <FavoriteBorder className="icons-icon" />

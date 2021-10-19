@@ -36,3 +36,9 @@ section {
     background-color: #130f40;
   }
 }
+
+@media (max-width:950px) {
+  section {
+      padding: 16px 4%;
+  }
+}

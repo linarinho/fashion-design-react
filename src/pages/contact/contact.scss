@@ -110,3 +110,22 @@
         }
     }
 }
+
+
+@media (max-width: 435px) {
+    .contact {
+        .contact-bottom {
+            .contact-form {
+                form {
+                    .row {
+                        gap: 10px;
+                        
+                        .contact-form-input {
+                           width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

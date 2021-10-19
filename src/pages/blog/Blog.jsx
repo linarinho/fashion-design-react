@@ -17,6 +17,13 @@ import 'swiper/components/navigation/navigation.scss'
 import SwiperCore, { Navigation } from 'swiper/core';
 SwiperCore.use([Navigation]);
 
+const breakpoints = {
+    100: { slidesPerView: 1 },
+    600: { slidesPerView: 2 },
+    920: { slidesPerView: 3 },
+    1200: { slidesPerView: 3 }
+}
+
 function Blog() {
     const desc = "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Impedit ad quos voluptate at repudiandae nemo tempora harum";
 
@@ -24,7 +31,7 @@ function Blog() {
         <section id="blog" className="blog">
             <h1 class="blog-heading"> Our <span>Blogs</span> </h1>
 
-            <Swiper navigation={true} slidesPerView={3} spaceBetween={10} className="blog-wrapper">
+            <Swiper navigation={true} slidesPerView={3} spaceBetween={10} breakpoints={breakpoints} className="blog-wrapper">
                 <SwiperSlide>
                     <BlogCard img={blog1} title="Blog Title Goes Here" description={desc} date="19th May, 2021" user="User" />
                 </SwiperSlide>

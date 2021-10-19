@@ -18,12 +18,17 @@ import 'swiper/components/navigation/navigation.scss'
 import SwiperCore, { Navigation } from 'swiper/core';
 SwiperCore.use([Navigation]);
 
+const breakpoints = {
+    100: { slidesPerView: 1 },
+    600: { slidesPerView: 2 },
+}
+
 function Review() {
     return (
         <section id="review" className="review">
             <h1 class="review-heading"> Client's <span>Review</span> </h1>
 
-            <Swiper navigation={false} slidesPerView={2} spaceBetween={10} className="review-wrapper">
+            <Swiper navigation={false} slidesPerView={2} spaceBetween={10} breakpoints={breakpoints} className="review-wrapper">
                 <SwiperSlide>
                     <ReviewCard img={review1} name="Roberto Linares" desc="Happy Client" />
                 </SwiperSlide>

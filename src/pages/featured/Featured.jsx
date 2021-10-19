@@ -27,9 +27,6 @@ SwiperCore.use([Navigation]);
 
 const breakpoints = {
     100: { slidesPerView: 1 },
-    200: { slidesPerView: 1 },
-    300: { slidesPerView: 1 },
-    500: { slidesPerView: 1 },
     720: { slidesPerView: 2 },
     920: { slidesPerView: 3 },
     1200: { slidesPerView: 4 }
